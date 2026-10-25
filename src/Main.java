@@ -16,9 +16,13 @@ public class Main {
 
         if (ika >= 18) {
             System.out.println("Olet täysi-ikäinen.");
-        } else {
-            System.out.println("Olet alaikäinen.");
-        }
+        } if (ika < 0) {
+    System.out.println("Ikä ei voi olla negatiivinen.");
+} else if (ika >= 18) {
+    System.out.println("Olet täysi-ikäinen.");
+} else {
+    System.out.println("Olet alaikäinen.");
+}
 
         lukija.close();
     }
